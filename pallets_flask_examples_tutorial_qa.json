@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What does the Flask tutorial app do?",
+    "answer": "It's a simple blog application that demonstrates basic CRUD operations using Flask."
+  },
+  {
+    "question": "What is the entry point of the app?",
+    "answer": "The entry point is the `flaskr/__init__.py` file, which creates the Flask application."
+  },
+  {
+    "question": "What is the purpose of `flaskr/db.py`?",
+    "answer": "It handles all interactions with the SQLite database, including connection and initialization."
+  },
+  {
+    "question": "How is user authentication implemented?",
+    "answer": "User authentication is handled using session cookies and form validation in `auth.py`."
+  },
+  {
+    "question": "What kind of database is used?",
+    "answer": "An SQLite database is used, stored in the instance folder."
+  },
+  {
+    "question": "How are templates rendered?",
+    "answer": "Templates are rendered using Jinja2 and stored in the `templates/` folder."
+  },
+  {
+    "question": "How are blog posts created?",
+    "answer": "Users can create posts via the `/create` route, which inserts data into the database."
+  },
+  {
+    "question": "How does the app handle form validation?",
+    "answer": "Form data is validated manually in the route handlers by checking for required fields."
+  },
+  {
+    "question": "How do you run the application?",
+    "answer": "Using the `flask --app flaskr run` command in the terminal."
+  },
+  {
+    "question": "Is there any test suite included?",
+    "answer": "Yes, there is a `tests/` directory with unit tests using `pytest`."
+  },
+  {
+    "question": "What is the structure of the Flask app?",
+    "answer": "The app is structured as a package, with blueprints for authentication and blog routes."
+  },
+  {
+    "question": "Where are static files stored?",
+    "answer": "Static files like CSS are stored in the `static/` folder."
+  },
+  {
+    "question": "What is stored in the `schema.sql` file?",
+    "answer": "It contains SQL statements to initialize the database schema."
+  },
+  {
+    "question": "Are environment variables used?",
+    "answer": "Yes, Flask uses environment variables for configuration like `FLASK_APP` and `FLASK_ENV`."
+  },
+  {
+    "question": "Is there any error handling implemented?",
+    "answer": "Yes, custom error pages and try-except blocks are used for error handling."
+  },
+  {
+    "question": "Is the application production-ready?",
+    "answer": "No, it's a tutorial application meant for learning purposes."
+  },
+  {
+    "question": "How are routes registered?",
+    "answer": "Routes are registered using blueprints in the `auth` and `blog` modules."
+  },
+  {
+    "question": "Does the app use any middleware?",
+    "answer": "No custom middleware is used, just Flask\u2019s built-in request and session handling."
+  },
+  {
+    "question": "Are cookies used in this app?",
+    "answer": "Yes, cookies are used to manage login sessions via Flask\u2019s session mechanism."
+  },
+  {
+    "question": "Can the app be deployed to Heroku?",
+    "answer": "Yes, with minor configuration (like Procfile and environment variables), it can be deployed to Heroku."
+  }
+]

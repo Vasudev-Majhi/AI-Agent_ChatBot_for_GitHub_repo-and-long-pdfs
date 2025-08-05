@@ -1,0 +1,248 @@
+{
+  "TheAlgorithms/Python": [
+    {
+      "question": "What is the purpose of the binary_search.py file?",
+      "answer": "The binary_search.py file implements the binary search algorithm, which efficiently searches for an element in a sorted list."
+    },
+    {
+      "question": "How does linear search differ from binary search in this repo?",
+      "answer": "Linear search checks each element sequentially, while binary search divides the list and eliminates half of the remaining elements each time, making it faster on sorted lists."
+    },
+    {
+      "question": "What input does the jump_search function expect?",
+      "answer": "The jump_search function expects a sorted list and the target value to search for."
+    },
+    {
+      "question": "Are there any recursive algorithms in this repo?",
+      "answer": "Yes, recursive versions of search algorithms like binary search are included in this repository."
+    },
+    {
+      "question": "What is the time complexity of the interpolation search algorithm?",
+      "answer": "The average time complexity of interpolation search is O(log log n), but it can degrade to O(n) in the worst case."
+    },
+    {
+      "question": "Which file implements exponential search?",
+      "answer": "The exponential_search.py file implements the exponential search algorithm."
+    },
+    {
+      "question": "How is the ternary search algorithm implemented in this repo?",
+      "answer": "The ternary search algorithm recursively divides the array into three parts and searches in the appropriate section based on comparisons."
+    },
+    {
+      "question": "What exception handling is used in these search algorithms?",
+      "answer": "Some algorithms include basic exception handling like checking for empty input or invalid types, but it's minimal overall."
+    },
+    {
+      "question": "Is there any use of test cases or assertions?",
+      "answer": "Yes, some files include simple test cases or assertions to verify the correctness of the implemented functions."
+    },
+    {
+      "question": "Do these scripts handle user input?",
+      "answer": "Most scripts do not handle user input directly; they define functions that can be imported and used programmatically."
+    },
+    {
+      "question": "Is recursion used in binary search?",
+      "answer": "Yes, there is both a recursive and an iterative version of binary search available."
+    },
+    {
+      "question": "What data structures are commonly used?",
+      "answer": "Lists are the primary data structure used in these search algorithms."
+    },
+    {
+      "question": "How does jump search optimize performance?",
+      "answer": "Jump search reduces the number of comparisons by skipping ahead fixed steps and then performing a linear search in the identified block."
+    },
+    {
+      "question": "Which algorithm is best for small datasets?",
+      "answer": "Linear search is generally fine for small datasets due to its simplicity and minimal setup."
+    },
+    {
+      "question": "Which algorithm requires a sorted list?",
+      "answer": "Binary search, jump search, and interpolation search all require a sorted list to function correctly."
+    },
+    {
+      "question": "Are the algorithms implemented in classes or functions?",
+      "answer": "All search algorithms are implemented as standalone functions, not within classes."
+    },
+    {
+      "question": "Is NumPy used in any of the algorithms?",
+      "answer": "No, NumPy is not used in these basic search algorithm implementations."
+    },
+    {
+      "question": "Are there docstrings explaining the functions?",
+      "answer": "Yes, most functions are well-documented with docstrings explaining parameters and return values."
+    },
+    {
+      "question": "Is there a README explaining the search algorithms?",
+      "answer": "The root repo contains a general README, but individual algorithm folders may not have detailed descriptions."
+    },
+    {
+      "question": "Can these scripts be used as a library?",
+      "answer": "Yes, the functions can be imported into other Python scripts and used like a library."
+    }
+  ],
+  "geekcomputers/Python": [
+    {
+      "question": "What is the purpose of the site_checker.py script?",
+      "answer": "The site_checker.py script checks if a website is online by sending HTTP requests and evaluating the response."
+    },
+    {
+      "question": "What kind of tasks does the repo cover?",
+      "answer": "It includes diverse utility scripts for networking, file operations, system tasks, and fun projects."
+    },
+    {
+      "question": "How does send_email.py send emails?",
+      "answer": "It uses the smtplib library to connect to an SMTP server and send emails."
+    },
+    {
+      "question": "Does any script use multithreading or multiprocessing?",
+      "answer": "Yes, some scripts like the downloaders or checkers may use threading for concurrency."
+    },
+    {
+      "question": "What libraries are used for web scraping?",
+      "answer": "Scripts for web scraping often use BeautifulSoup and requests."
+    },
+    {
+      "question": "Is there any script for automating keyboard or mouse?",
+      "answer": "Yes, the repo includes scripts that use `pyautogui` for automation."
+    },
+    {
+      "question": "How are errors handled in downloader scripts?",
+      "answer": "They typically include try-except blocks to handle URL errors and download failures."
+    },
+    {
+      "question": "Is there any GUI application?",
+      "answer": "Yes, a few scripts use Tkinter to build basic GUI applications."
+    },
+    {
+      "question": "How do you run these scripts?",
+      "answer": "They can be run directly via the command line using `python script_name.py`."
+    },
+    {
+      "question": "Are there any machine learning scripts?",
+      "answer": "Yes, some scripts demonstrate basic ML tasks using scikit-learn or TensorFlow."
+    },
+    {
+      "question": "Are inputs taken from users in any scripts?",
+      "answer": "Yes, many scripts prompt the user for input via the `input()` function."
+    },
+    {
+      "question": "Is there any script related to PDF processing?",
+      "answer": "Yes, some scripts handle PDF reading and manipulation using PyPDF2."
+    },
+    {
+      "question": "Are there examples of file I/O?",
+      "answer": "Many scripts read from and write to text files, logs, or configurations."
+    },
+    {
+      "question": "Are the scripts modular?",
+      "answer": "Most are standalone scripts, though some are organized into reusable functions."
+    },
+    {
+      "question": "Is exception handling used consistently?",
+      "answer": "It varies \u2014 some scripts use exception handling extensively, others not at all."
+    },
+    {
+      "question": "Are there any REST API usage examples?",
+      "answer": "Yes, some scripts interact with REST APIs using the `requests` library."
+    },
+    {
+      "question": "How are dependencies managed?",
+      "answer": "There is no global dependency manager, but some scripts list requirements at the top."
+    },
+    {
+      "question": "Are there scripts for system monitoring?",
+      "answer": "Yes, there are scripts that monitor CPU usage, memory, and disk space."
+    },
+    {
+      "question": "Do any scripts work with databases?",
+      "answer": "Yes, some scripts connect to SQLite or MySQL databases for basic operations."
+    },
+    {
+      "question": "Is the codebase actively maintained?",
+      "answer": "The repo has many contributors, but not all scripts are actively maintained or updated."
+    }
+  ],
+  "pallets/flask/examples/tutorial": [
+    {
+      "question": "What does the Flask tutorial app do?",
+      "answer": "It's a simple blog application that demonstrates basic CRUD operations using Flask."
+    },
+    {
+      "question": "What is the entry point of the app?",
+      "answer": "The entry point is the `flaskr/__init__.py` file, which creates the Flask application."
+    },
+    {
+      "question": "What is the purpose of `flaskr/db.py`?",
+      "answer": "It handles all interactions with the SQLite database, including connection and initialization."
+    },
+    {
+      "question": "How is user authentication implemented?",
+      "answer": "User authentication is handled using session cookies and form validation in `auth.py`."
+    },
+    {
+      "question": "What kind of database is used?",
+      "answer": "An SQLite database is used, stored in the instance folder."
+    },
+    {
+      "question": "How are templates rendered?",
+      "answer": "Templates are rendered using Jinja2 and stored in the `templates/` folder."
+    },
+    {
+      "question": "How are blog posts created?",
+      "answer": "Users can create posts via the `/create` route, which inserts data into the database."
+    },
+    {
+      "question": "How does the app handle form validation?",
+      "answer": "Form data is validated manually in the route handlers by checking for required fields."
+    },
+    {
+      "question": "How do you run the application?",
+      "answer": "Using the `flask --app flaskr run` command in the terminal."
+    },
+    {
+      "question": "Is there any test suite included?",
+      "answer": "Yes, there is a `tests/` directory with unit tests using `pytest`."
+    },
+    {
+      "question": "What is the structure of the Flask app?",
+      "answer": "The app is structured as a package, with blueprints for authentication and blog routes."
+    },
+    {
+      "question": "Where are static files stored?",
+      "answer": "Static files like CSS are stored in the `static/` folder."
+    },
+    {
+      "question": "What is stored in the `schema.sql` file?",
+      "answer": "It contains SQL statements to initialize the database schema."
+    },
+    {
+      "question": "Are environment variables used?",
+      "answer": "Yes, Flask uses environment variables for configuration like `FLASK_APP` and `FLASK_ENV`."
+    },
+    {
+      "question": "Is there any error handling implemented?",
+      "answer": "Yes, custom error pages and try-except blocks are used for error handling."
+    },
+    {
+      "question": "Is the application production-ready?",
+      "answer": "No, it's a tutorial application meant for learning purposes."
+    },
+    {
+      "question": "How are routes registered?",
+      "answer": "Routes are registered using blueprints in the `auth` and `blog` modules."
+    },
+    {
+      "question": "Does the app use any middleware?",
+      "answer": "No custom middleware is used, just Flask\u2019s built-in request and session handling."
+    },
+    {
+      "question": "Are cookies used in this app?",
+      "answer": "Yes, cookies are used to manage login sessions via Flask\u2019s session mechanism."
+    },
+    {
+      "question": "Can the app be deployed to Heroku?",
+      "answer": "Yes, with minor configuration (like Procfile and environment variables), it can be deployed to Heroku."
+    }
+  ]
+}

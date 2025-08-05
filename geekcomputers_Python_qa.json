@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the purpose of the site_checker.py script?",
+    "answer": "The site_checker.py script checks if a website is online by sending HTTP requests and evaluating the response."
+  },
+  {
+    "question": "What kind of tasks does the repo cover?",
+    "answer": "It includes diverse utility scripts for networking, file operations, system tasks, and fun projects."
+  },
+  {
+    "question": "How does send_email.py send emails?",
+    "answer": "It uses the smtplib library to connect to an SMTP server and send emails."
+  },
+  {
+    "question": "Does any script use multithreading or multiprocessing?",
+    "answer": "Yes, some scripts like the downloaders or checkers may use threading for concurrency."
+  },
+  {
+    "question": "What libraries are used for web scraping?",
+    "answer": "Scripts for web scraping often use BeautifulSoup and requests."
+  },
+  {
+    "question": "Is there any script for automating keyboard or mouse?",
+    "answer": "Yes, the repo includes scripts that use `pyautogui` for automation."
+  },
+  {
+    "question": "How are errors handled in downloader scripts?",
+    "answer": "They typically include try-except blocks to handle URL errors and download failures."
+  },
+  {
+    "question": "Is there any GUI application?",
+    "answer": "Yes, a few scripts use Tkinter to build basic GUI applications."
+  },
+  {
+    "question": "How do you run these scripts?",
+    "answer": "They can be run directly via the command line using `python script_name.py`."
+  },
+  {
+    "question": "Are there any machine learning scripts?",
+    "answer": "Yes, some scripts demonstrate basic ML tasks using scikit-learn or TensorFlow."
+  },
+  {
+    "question": "Are inputs taken from users in any scripts?",
+    "answer": "Yes, many scripts prompt the user for input via the `input()` function."
+  },
+  {
+    "question": "Is there any script related to PDF processing?",
+    "answer": "Yes, some scripts handle PDF reading and manipulation using PyPDF2."
+  },
+  {
+    "question": "Are there examples of file I/O?",
+    "answer": "Many scripts read from and write to text files, logs, or configurations."
+  },
+  {
+    "question": "Are the scripts modular?",
+    "answer": "Most are standalone scripts, though some are organized into reusable functions."
+  },
+  {
+    "question": "Is exception handling used consistently?",
+    "answer": "It varies \u2014 some scripts use exception handling extensively, others not at all."
+  },
+  {
+    "question": "Are there any REST API usage examples?",
+    "answer": "Yes, some scripts interact with REST APIs using the `requests` library."
+  },
+  {
+    "question": "How are dependencies managed?",
+    "answer": "There is no global dependency manager, but some scripts list requirements at the top."
+  },
+  {
+    "question": "Are there scripts for system monitoring?",
+    "answer": "Yes, there are scripts that monitor CPU usage, memory, and disk space."
+  },
+  {
+    "question": "Do any scripts work with databases?",
+    "answer": "Yes, some scripts connect to SQLite or MySQL databases for basic operations."
+  },
+  {
+    "question": "Is the codebase actively maintained?",
+    "answer": "The repo has many contributors, but not all scripts are actively maintained or updated."
+  }
+]

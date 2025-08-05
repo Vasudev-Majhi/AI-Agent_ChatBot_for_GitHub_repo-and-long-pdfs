@@ -1,0 +1,25 @@
+# Core app
+streamlit
+python-dotenv
+
+# RAG & embeddings
+langchain
+langchain-huggingface
+langchain-pinecone
+langchain-community
+
+# LLM & HF inference
+huggingface-hub
+sentence-transformers
+
+# Pinecone client
+pinecone-client
+
+# GitHub cloning
+GitPython
+
+# PDF processing
+pymupdf
+
+
+google-generativeai

@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "total_repositories": 5,
+    "total_pairs": 59,
+    "complexity_distribution": {
+      "basic": 16,
+      "intermediate": 23,
+      "advanced": 20
+    },
+    "creation_date": "2025-05-03"
+  },
+  "training_dataset": [
+    {
+      "id": 1,
+      "repository": "pytorch/pytorch",
+      "query": "What is the primary programming language used in the PyTorch repository, and what percentage of the codebase does it represent?",
+      "ground_truth": "According to the repository profile, Python is the primary programming language, representing approximately 85.3% of the codebase.",
+      "complexity": "basic"
+    },
+    {
+      "id": 2,
+      "repository": "pytorch/pytorch",
+      "query": "How many stars and forks does the `pytorch/pytorch` repository have on GitHub?",
+      "ground_truth": "The repository has 89.6 k stars and 24 k forks.",
+      "complexity": "basic"
+    },
+    {
+      "id": 3,
+      "repository": "pytorch/pytorch",
+      "query": "When was the PyTorch repository last updated?",
+      "ground_truth": "Based on the repository profile, it was last updated on May 2, 2025.",
+      "complexity": "basic"
+    },
+    {
+      "id": 4,
+      "repository": "pytorch/pytorch",
+      "query": "How many contributors have worked on the PyTorch repository?",
+      "ground_truth": "The profile states there are over 2,400 contributors.",
+      "complexity": "basic"
+    },
+    {
+      "id": 5,
+      "repository": "pytorch/pytorch",
+      "query": "Which directory contains the core tensor operations and neural network modules in PyTorch?",
+      "ground_truth": "The `torch/` directory contains the core PyTorch library, including tensor operations, neural network modules, and autograd functionality.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 6,
+      "repository": "pytorch/pytorch",
+      "query": "What is the role of the `aten/` folder in the PyTorch codebase?",
+      "ground_truth": "The `aten/` folder hosts the ATen library, which provides tensor operations and serves as the foundation for both PyTorch and Caffe2.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 7,
+      "repository": "pytorch/pytorch",
+      "query": "Which dependency listed accelerates multi-GPU and multi-node communication?",
+      "ground_truth": "NCCL (NVIDIA Collective Communications Library) is used to optimize multi-GPU and multi-node communication.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 8,
+      "repository": "pytorch/pytorch",
+      "query": "How are C++ components of PyTorch built and configured?",
+      "ground_truth": "C++ components are built and configured using CMake, as defined in the `CMakeLists.txt` file and driven by the CMake build system generator.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 9,
+      "repository": "pytorch/pytorch",
+      "query": "What functionality does the `torch.distributed` module provide in PyTorch?",
+      "ground_truth": "The `torch.distributed` module supports scalable training across multiple GPUs and nodes.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 10,
+      "repository": "pytorch/pytorch",
+      "query": "How do DataLoaders fit into PyTorch's data management approach?",
+      "ground_truth": "DataLoaders provide efficient data loading and batching, supporting parallelism.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 11,
+      "repository": "pytorch/pytorch",
+      "query": "What advantages do dynamic computational graphs offer in PyTorch's autograd system?",
+      "ground_truth": "Dynamic computational graphs allow flexible model building and gradient computation using a tape-based autograd system.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 12,
+      "repository": "pytorch/pytorch",
+      "query": "How do the Factory and Observer design patterns contribute to PyTorch's autograd engine?",
+      "ground_truth": "Factory Pattern: used in creating various tensor types and neural network layers. Observer Pattern: implemented in the autograd engine to track operations for gradient computation.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 13,
+      "repository": "pytorch/pytorch",
+      "query": "In what way does PyTorch's modular design support its distributed training feature?",
+      "ground_truth": "PyTorch’s modular design encapsulates functionalities into distinct modules (like `torch.nn`, `torch.optim`, and `torch.utils`), promoting separation of concerns.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 14,
+      "repository": "tensorflow/tfjs",
+      "query": "What is the primary programming language used in the TensorFlow.js repository and what percentage of the codebase does it represent?",
+      "ground_truth": "According to the repository profile, TypeScript is the primary language, representing 85% of the codebase.",
+      "complexity": "basic"
+    },
+    {
+      "id": 15,
+      "repository": "tensorflow/tfjs",
+      "query": "How many stars and forks does the `tensorflow/tfjs` repository have on GitHub?",
+      "ground_truth": "The repository has 18.8 k stars and 2 k forks.",
+      "complexity": "basic"
+    },
+    {
+      "id": 16,
+      "repository": "tensorflow/tfjs",
+      "query": "How many contributors have worked on TensorFlow.js, and when was it last updated?",
+      "ground_truth": "There are over 400 contributors, and the repository was last updated on May 2, 2025.",
+      "complexity": "basic"
+    },
+    {
+      "id": 17,
+      "repository": "tensorflow/tfjs",
+      "query": "Aside from TypeScript and JavaScript, what other languages make up the remainder of the codebase, and what percentage do they represent?",
+      "ground_truth": "The \"Others\" category (e.g., Shell, Python) makes up 5% of the codebase.",
+      "complexity": "basic"
+    },
+    {
+      "id": 18,
+      "repository": "tensorflow/tfjs",
+      "query": "Which module is responsible for data loading and preprocessing in TensorFlow.js?",
+      "ground_truth": "The `tfjs-data/` module handles data loading and preprocessing, providing functionality akin to TensorFlow's `tf.data` API.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 19,
+      "repository": "tensorflow/tfjs",
+      "query": "What is the relationship between the `tfjs-core` and `tfjs-layers` modules?",
+      "ground_truth": "tfjs-core implements low-level operations such as tensor creation, math functions, and automatic differentiation, while tfjs-layers builds on those core operations to provide high-level APIs for defining and training neural networks.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 20,
+      "repository": "tensorflow/tfjs",
+      "query": "How does the `tfjs-converter` module interact with the rest of the repository?",
+      "ground_truth": "The `tfjs-converter/` directory contains tools for converting TensorFlow SavedModels and Keras models to TensorFlow.js format.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 21,
+      "repository": "tensorflow/tfjs",
+      "query": "In what way does `tfjs-node` integrate with native TensorFlow libraries?",
+      "ground_truth": "The `tfjs-node/` module provides Node.js bindings for executing TensorFlow operations in server-side environments.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 22,
+      "repository": "tensorflow/tfjs",
+      "query": "How is the `tfjs-vis` module used in the typical component interaction flow?",
+      "ground_truth": "The `tfjs-vis` module provides visualization tools for model metrics and performance.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 23,
+      "repository": "tensorflow/tfjs",
+      "query": "What benefit does the modular monorepo structure provide for the TensorFlow.js project?",
+      "ground_truth": "The modular monorepo structure promotes separation of concerns, ease of maintenance, and scalability by housing each major component in its own directory while centralizing shared utilities and configurations.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 24,
+      "repository": "tensorflow/tfjs",
+      "query": "How does the backend abstraction design pattern facilitate support for multiple execution environments in TensorFlow.js?",
+      "ground_truth": "By defining a common interface for different backends (CPU, WebGL, WASM, WebGPU), the backend abstraction pattern allows seamless switching and extension of execution environments without altering high-level APIs.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 25,
+      "repository": "tensorflow/tfjs",
+      "query": "What are the implications of manual memory management via `dispose()` and `tf.tidy()` for developers using TensorFlow.js?",
+      "ground_truth": "Manual memory management is facilitated through methods like `dispose()` and `tf.tidy()` to prevent memory leaks.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 26,
+      "repository": "spring-projects/spring-framework",
+      "query": "What is the primary programming language used in the Spring Framework repository?",
+      "ground_truth": "According to the repository profile, Java is the primary programming language, making up 95% of the codebase.",
+      "complexity": "basic"
+    },
+    {
+      "id": 27,
+      "repository": "spring-projects/spring-framework",
+      "query": "How many contributors have worked on the Spring Framework repository?",
+      "ground_truth": "The repository profile states that over 260 contributors have worked on the project.",
+      "complexity": "basic"
+    },
+    {
+      "id": 28,
+      "repository": "spring-projects/spring-framework",
+      "query": "What is the GitHub URL of the Spring Framework repository?",
+      "ground_truth": "https://github.com/spring-projects/spring-framework",
+      "complexity": "basic"
+    },
+    {
+      "id": 29,
+      "repository": "spring-projects/spring-framework",
+      "query": "When was the Spring Framework repository last updated?",
+      "ground_truth": "The repository was last updated on May 2, 2025, as noted in the profile.",
+      "complexity": "basic"
+    },
+    {
+      "id": 30,
+      "repository": "spring-projects/spring-framework",
+      "query": "What role does the `spring-context` module play in the Spring Framework?",
+      "ground_truth": "The `spring-context` module builds upon the core and beans modules to provide a framework for accessing application objects.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 31,
+      "repository": "spring-projects/spring-framework",
+      "query": "How do the `spring-aop` and `spring-core` modules interact in terms of functionality?",
+      "ground_truth": "The `spring-aop` module supports aspect-oriented programming features, and `spring-core` provides the core IoC container and DI functionality.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 32,
+      "repository": "spring-projects/spring-framework",
+      "query": "What is the purpose of the `JdbcTemplate` interface and in which module is it found?",
+      "ground_truth": "The `JdbcTemplate` interface simplifies JDBC operations and is found in the `spring-jdbc` module.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 33,
+      "repository": "spring-projects/spring-framework",
+      "query": "How does the Spring Framework simplify transaction management across modules?",
+      "ground_truth": "Spring provides a consistent programming model for transaction management, supporting both declarative and programmatic transactions.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 34,
+      "repository": "spring-projects/spring-framework",
+      "query": "Which API interfaces support the Spring MVC framework and how are they used?",
+      "ground_truth": "The `Controller` interface is used to define web controllers within the Spring MVC framework, which resides in the `spring-webmvc` module.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 35,
+      "repository": "spring-projects/spring-framework",
+      "query": "What architectural design patterns are employed in Spring to manage object dependencies and what modules demonstrate this?",
+      "ground_truth": "The Spring Framework uses the Dependency Injection pattern via the IoC container in modules like `spring-core` and `spring-beans`.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 36,
+      "repository": "spring-projects/spring-framework",
+      "query": "What is the advantage of Spring's modular directory structure in terms of scalability and maintainability?",
+      "ground_truth": "The modular directory organization allows selective use of components and promotes separation of concerns, improving maintainability.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 37,
+      "repository": "spring-projects/spring-framework",
+      "query": "What trade-offs are involved in using proxies for AOP features in Spring, as mentioned in the architecture?",
+      "ground_truth": "Spring uses the Proxy design pattern in its AOP implementation to create proxies for target objects.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 38,
+      "repository": "bigskysoftware/htmx",
+      "query": "How do the `src/` and `dist/` directories relate in the htmx build process?",
+      "ground_truth": "The `src/` directory contains the source code for htmx, including core logic and modules. The `dist/` directory holds the distribution-ready files, such as minified JavaScript.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 39,
+      "repository": "bigskysoftware/htmx",
+      "query": "What role do the `test/` suites play in relation to the `src/` code in htmx?",
+      "ground_truth": "The `test/` directory includes test suites designed to verify the reliability and correctness of the core logic implemented in `src/`.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 40,
+      "repository": "bigskysoftware/htmx",
+      "query": "How does the extension mechanism leverage the event-driven architecture in htmx?",
+      "ground_truth": "htmx triggers custom events throughout its request/response flow, and extensions hook into these events to augment or modify behavior without altering the core code.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 41,
+      "repository": "bigskysoftware/htmx",
+      "query": "In what way do the `www/` and `scripts/` directories complement each other for the documentation site?",
+      "ground_truth": "The `www/` directory hosts the documentation and examples, while `scripts/` contains build and utility scripts for development workflows.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 42,
+      "repository": "bigskysoftware/htmx",
+      "query": "How do HTML attributes like `hx-get` integrate with the event-driven flow outlined in the component interaction section?",
+      "ground_truth": "Attributes such as `hx-get` are spotted by htmx on user interaction, trigger an HTTP request, and participate in the event system to allow custom handling before and after the DOM update.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 43,
+      "repository": "bigskysoftware/htmx",
+      "query": "What are the trade-offs of htmx's dependency-free design?",
+      "ground_truth": "The profile states htmx is dependency-free, ensuring lightweight and straightforward integration into projects.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 44,
+      "repository": "bigskysoftware/htmx",
+      "query": "How does attribute-oriented programming both simplify and limit client logic in htmx?",
+      "ground_truth": "The profile indicates htmx uses attribute-oriented programming to define behavior declaratively using HTML attributes.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 45,
+      "repository": "bigskysoftware/htmx",
+      "query": "What advantages and disadvantages arise from htmx's progressive enhancement approach?",
+      "ground_truth": "The profile states that progressive enhancement in htmx enhances HTML capabilities without requiring a full JavaScript framework.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 46,
+      "repository": "bigskysoftware/htmx",
+      "query": "How does htmx's server-driven UI approach affect client-side state management?",
+      "ground_truth": "According to the profile, htmx relies on server responses to update the DOM and does not manage client-side state itself.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 47,
+      "repository": "bigskysoftware/htmx",
+      "query": "In what way does the event-driven architecture introduce complexity for debugging?",
+      "ground_truth": "The profile notes that htmx handles interactions and responses through a robust event-driven architecture.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 48,
+      "repository": "bigskysoftware/htmx",
+      "query": "What are the benefits and drawbacks of using CSS transitions in htmx's DOM updates?",
+      "ground_truth": "The profile states that htmx allows seamless integration of CSS transitions and animations during DOM updates.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 49,
+      "repository": "bigskysoftware/htmx",
+      "query": "How does the modular directory structure support maintainability, and what trade-off does it introduce?",
+      "ground_truth": "The profile describes a modular directory structure separating source, tests, distribution files, and documentation, which promotes maintainability.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 50,
+      "repository": "eclipse/deeplearning4j",
+      "query": "How does the `deeplearning4j` module use the `nd4j` library in its model implementations?",
+      "ground_truth": "The `deeplearning4j` module builds on `nd4j` by using its core `INDArray` class and linear-algebra routines to represent and manipulate tensors for `MultiLayerNetwork` and `ComputationGraph` training and inference.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 51,
+      "repository": "eclipse/deeplearning4j",
+      "query": "In a typical training pipeline, how do `datavec` and `deeplearning4j` interact?",
+      "ground_truth": "datavec loads and preprocesses raw data into `DataSetIterator` objects, which are then fed into the high-level Java APIs in `deeplearning4j` for training.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 52,
+      "repository": "eclipse/deeplearning4j",
+      "query": "What role does the `libnd4j` folder play for both ND4J and SameDiff components?",
+      "ground_truth": "libnd4j provides the native C++ engine that ND4J wraps for all tensor math operations; SameDiff relies on those native routines for graph-based automatic differentiation.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 53,
+      "repository": "eclipse/deeplearning4j",
+      "query": "How does the `python4j` module enable interoperability in the Deeplearning4j project?",
+      "ground_truth": "The `python4j` module bundles a CPython environment on the JVM, allowing Java code to execute Python scripts and import models via the same JVM process.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 54,
+      "repository": "eclipse/deeplearning4j",
+      "query": "How are different hardware backends selected during tests in the `platform-tests` module?",
+      "ground_truth": "The `platform-tests` Maven project uses configurable properties in its `pom.xml` to switch between CPU and CUDA backends when running tests.",
+      "complexity": "intermediate"
+    },
+    {
+      "id": 55,
+      "repository": "eclipse/deeplearning4j",
+      "query": "What are the advantages and disadvantages of maintaining Deeplearning4j as a monolithic monorepo?",
+      "ground_truth": "Maintaining a monolithic monorepo enables consistent versioning and unified release management across all sub-projects.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 56,
+      "repository": "eclipse/deeplearning4j",
+      "query": "How does the define-then-run (graph-based) pattern in SameDiff impact flexibility and performance compared to an eager mode?",
+      "ground_truth": "SameDiff implements a graph-based define-then-run execution pattern similar to TensorFlow graph mode.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 57,
+      "repository": "eclipse/deeplearning4j",
+      "query": "What trade-offs come from using JNI abstraction via JavaCPP for native math operations?",
+      "ground_truth": "The profile notes that JavaCPP bridges Java and native C++ code in `libnd4j/nd4j` for JNI abstraction.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 58,
+      "repository": "eclipse/deeplearning4j",
+      "query": "How does manual workspace management in INDArray reduce garbage-collection overhead, and what is the downside?",
+      "ground_truth": "According to the profile, ND4J uses optional off-heap memory workspaces to reduce garbage-collection overhead.",
+      "complexity": "advanced"
+    },
+    {
+      "id": 59,
+      "repository": "eclipse/deeplearning4j",
+      "query": "In what way does the Builder pattern simplify neural network configuration, and what complexity does it introduce?",
+      "ground_truth": "The profile indicates that the Builder pattern is used in configuring neural networks (for example, `MultiLayerConfiguration.Builder`).",
+      "complexity": "advanced"
+    }
+  ]
+}
